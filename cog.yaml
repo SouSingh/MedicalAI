@@ -1,0 +1,12 @@
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.10"
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_packages:
+    - "Pillow==10.0.0"
+    - "monai-weekly[gdown, nibabel, tqdm, itk]"
+
+predict: "predict.py:Predictor"
